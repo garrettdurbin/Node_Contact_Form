@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/garrettWebSite.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div id ="topBorder">
+        <div id ="topBorderText">
+        <p>Garrett Durbin | Software Developer</p>
+        </div>
+        
+        <div id="buttonGroup">
+        <button id="portfolioButton"><a href="garrettWebSite.html">PORTFOLIO</a></button>
+        <button id="resumeButton"><a href="resume.html">RESUME</a></button>
+        <button id="contactMeButton"><a href="contactMe.html">CONTACT ME</a></button>
+        </div>
+    </div>
+    
+    <div>
+        <h2 id="contactTitle" style="color:blue;">Contact Garrett</h2>
+        <h3>{{msg}}</h3>
+    </div>
+    <!--<div class="alert">Your message has been sent.</div>
+    -->
+    
+    <div id="contactMe">
+        
+        <form method="POST" id="contactForm" action="send">
+            <table id="contactMeTable">
+                <tr>
+                    <td id="nameCell"><label class="formInput">Your name: <input type="text" id="name" class="formInput" name="name" size="30" maxlength="50" required></label></td>
+                    <td id="emailCell"><label class="formInput">Your email: <input type="email" id="email" class="formInput" name="email" size="40" maxlength="75" required></label></td>
+                </tr>
+                <tr>
+                    <td id="messageCell" colspan="2"><label class="formInput">Your message: <textarea name="message" id="message" class="formInput" cols="80" rows="10"></textarea></label></td>
+                </tr>
+            </table>
+            <button type="submit" class="submitButtons">Submit</button>
+        </form>
+    </div>
+    <div>
+        
+    </div>
+
+    <!--Possible Mistake: Correct firebase script?-->
+    <!--
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    -->
+    <!--<script src="app.js"></script>-->
+</body>
+</html>
